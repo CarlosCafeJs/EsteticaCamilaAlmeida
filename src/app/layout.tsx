@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-// import { Analytics } from '@vercel/analytics/next';
 import { Analytics } from "@vercel/analytics/react"
+import Header from "@/components/Header/header"
 import "./globals.css";
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { geistSans, geistMono } from './fonts'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,6 +19,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
         <Analytics />
       </body>
