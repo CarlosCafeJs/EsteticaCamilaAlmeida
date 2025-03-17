@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Kameron, Libre_Baskerville } from "next/font/google"
 
 export const libre = Libre_Baskerville({
   subsets: ['latin'],
+  style: ['italic'],
   display: 'swap',
   weight: ['400', '700'],
 })

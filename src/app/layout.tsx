@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import Header from "@/components/Header/header"
 import "./globals.css";
-import { geistSans, geistMono } from './fonts'
+import { kameron } from './fonts'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${kameron.className} ${kameron.className} antialiased`}
       >
         <Header />
         {children}
