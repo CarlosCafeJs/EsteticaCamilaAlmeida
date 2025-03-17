@@ -6,7 +6,7 @@ import { kameron } from './fonts'
 
 export const metadata: Metadata = {
   title: "Dra. Camila Almeida",
-  description: "Esteticita especializada em cuidado da pele.",
+  description: "Esteticista especializada em cuidado da pele.",
 };
 
 export default function RootLayout({
